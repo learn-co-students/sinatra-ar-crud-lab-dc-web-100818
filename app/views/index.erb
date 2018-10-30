@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Post Library</title>
+  </head>
+  <body>
+    <h1>All my posts</h1>
+      <ul>
+        <% @posts.each do |post|%>
+         <li>
+  
+           <%= post.name %>
+           <% end %>
+         </li>
+      </ul>
+
+  </body>
+</html>
