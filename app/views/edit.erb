@@ -1,0 +1,12 @@
+<form method="post" action="/posts/<%= @edit_post.id %>">
+  <input id="hidden" type="hidden" name="_method" value="patch">
+  <p>Current post name: <%= @edit_post.name %></p>
+  <p>To change your post name, enter the new name here:</p>
+  <input type="text" name="name">
+  <br>
+  <p>Current post content: <%= @edit_post.content %></p>
+  <p>To change your post content, enter the new content here:</p>
+  <input type="text" name="content">
+  <br>
+  <input type="submit" value="submit">
+</form>
