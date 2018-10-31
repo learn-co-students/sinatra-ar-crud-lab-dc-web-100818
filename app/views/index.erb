@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My Posts</title>
+  </head>
+  <body>
+    <h1>All of My Posts</h1>
+    <ul>
+      <% @posts.each do |post| %>
+      <li>
+        <a href="/posts/<%= post.id %>"><%=post.name%></a>
+        <p><%= post.content %></p>
+      </li>
+      <% end %>
+    </ul>
+
+      </form>
+      <a href="/posts/new">Create a new blog post</a>
+
+  </body>
+</html>
